@@ -9,6 +9,7 @@
     <title>PEMBELIAN TIKET KERETA API</title>
 </head>
 <body>
+    <form action="tabel.html" method="post" id="riset">
     <h1>Halaman Pembelian</h1>
     <label for="Nama">Nama :</label><br>
     <input type="text" id="Nama" name="Nama" required><br>
@@ -42,5 +43,15 @@
    <a href="tabel.html">
     <button type="submit">submit</button>
    </a>
+        <a href="tabel.html">
+        <button type="submit">Submit</button>
+    </a>
+    <button onclick="reset()">Reset</button>
+    </form>
 </body>
+    <script>
+    function reset(){
+        Document.getelementbyid("riset").reset();
+    }
+</script>
 </html>
