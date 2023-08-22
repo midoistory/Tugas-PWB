@@ -1,0 +1,13 @@
+body{
+    background-color: rgba(190, 27, 177, 0.301);
+    font-family: sans-serif;
+    text-align: center;
+} 
+
+.image{
+    padding: 20px;
+}
+
+h1{
+    color: rgb(18, 68, 68);
+}
