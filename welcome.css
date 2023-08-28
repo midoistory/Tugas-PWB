@@ -1,13 +1,18 @@
 body{
-    background-color: rgba(190, 27, 177, 0.301);
+    background-color: rgba(27, 43, 190, 0.301);
     font-family: sans-serif;
     text-align: center;
 } 
 
 .image{
-    padding: 20px;
+    padding: 20px; 
 }
-
-h1{
-    color: rgb(18, 68, 68);
+button{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan;
+}
+button:hover{
+    box-shadow: 0 0 5px rgb(255, 0, 128),
+    0 0 25px rgb(255, 0, 128),0 0 50px rgb(255, 0, 128),
+    0 0 100px rgb(255, 0, 128),0 0 200px rgb(255, 0, 128);
 }
