@@ -1,24 +1,23 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PEMBELIAN TIKET KERETA API</title>
     <style>
-    #halaman {
-    text-align: center;
-    color: #445069;
-    }
+      body {
+        background-color: #FFDBAA;
+      }
 
-    body{
-        text-align: center;
-        background-color: #9EB384;
-    }
+      .container {
+        width: 400px;
+        margin: auto;
+        padding: 20px;
+        background-color: #b6d5b3;
+      }
 
-    button{
+      button {
         width: 100%;
         text-align: center;
         display: block;
@@ -29,52 +28,58 @@
         border: none;
         border-radius: 10px;
         cursor: pointer;
-
-    }
+      }
     </style>
-</head>
-<body>
+  <body>
+    <!-- Inline CSS -->
+    <div class="container" style="text-align: center; width: 300px; margin: 0 auto; padding: 20px; border: 1px solid; border-radius: 20px;">
     <form action="tabel.html" method="post" id="riset">
-    <h1 id="halaman">Halaman Pembelian</h1>
-    <label for="Nama">Nama :</label><br>
-    <input type="text" id="Nama" name="Nama" required><br>
-    <br>
-    <label for="Nomor_Telepon">Nomor Telepon :</label><br>
-    <input type="number" id="Nomor_Telepon" name="Nomor_Telepon"><br>
-    <br>
-    <label for="Alamat_Email">Alamat Email :</label><br>
-    <input type="text" id="Alamat_Email" name="Alamat_Email"><br>
-    <br>
-    <label for="Tujuan">Tujuan :</label><br>
-    <input type="radio" name="Tujuan" value="Karawang">Karawang<br>
-    <input type="radio" name="Tujuan" value="Surabaya">Surabaya<br>
-    <input type="radio" name="Tujuan" value="Malang">Malang<br>
-    <br>
-     <label for="Cemilan">Cemilan Perjalanan :</label><br>
-   <input type="checkbox" name="Cemilan" value="Biskuit">Biskuit<br>
-   <input type="checkbox" name="Cemilan" value="Buah">Buah<br>
-   <input type="checkbox" name="Cemilan" value="Chiki">Chiki<br>
-   <br>
-   <label for="Biaya">Biaya Pembayaran :</label><br>
-   <select name="Biaya" id="Biaya">
-   <option value="500.000">VIP : 500.000</option>
-   <option value="600.000">VVIP : 600.000</option>
-   <option value="300.000">EKONOMI : 300.000</option>
-   </select>
-   <br>
-   <label for="Keterangan">Keterangan :</label><br>
-   <textarea name="Keterangan" id="Keterangan" cols="30" rows="10"></textarea>
-   <br>
-   </a>
-        <a href="tabel.html">
-        <button type="submit">Submit</button>
-    </a>
-    <button onclick="reset()">Reset</button>
+      <h1 style="color: #495d47">Halaman Pembelian</h1>
+      <label for="Nama">Nama :</label><br />
+      <input type="text" id="Nama" name="Nama" required /><br />
+      <br />
+      <label for="Nomor_Telepon">Nomor Telepon :</label><br />
+      <input type="number" id="Nomor_Telepon" name="Nomor_Telepon" /><br />
+      <br />
+      <label for="Alamat_Email">Alamat Email :</label><br />
+      <input type="text" id="Alamat_Email" name="Alamat_Email" /><br />
+      <br />
+      <label for="Tujuan">Tujuan :</label><br />
+      <input type="radio" name="Tujuan" value="Karawang" />Karawang<br />
+      <input type="radio" name="Tujuan" value="Surabaya" />Surabaya<br />
+      <input type="radio" name="Tujuan" value="Malang" />Malang<br />
+      <br />
+      <label for="Camilan">Pilih Camilan Perjalanan :</label><br />
+      <input type="checkbox" name="Camilan" value="Biskuit" />Biskuit<br />
+      <input type="checkbox" name="Camilan" value="Buah" />Buah<br />
+      <input type="checkbox" name="Camilan" value="Chiki" />Chiki<br />
+      <br />
+      <label for="Biaya">Biaya Perjalanan :</label><br />
+      <select name="Biaya" id="Biaya">
+        <option value="300.000">Ekonomi : 300.000</option>
+        <option value="500.000">VIP : 500.000</option>
+        <option value="600.000">VVIP : 600.000</option>
+      </select>
+      <br />
+      <br />
+      <label for="keterangan">Keterangan :</label> <br />
+      <textarea
+        name="keterangan"
+        id="keterangan"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br/>
+      <a href="tabel.html">
+        <button type="button">Submit</button>
+      </a>
+      <button onclick="reset()">Reset</button>
     </form>
-</body>
-    <script>
-    function reset(){
-        Document.getelementbyid("riset").reset();
+    </div>
+  </body>
+  <script>
+    function reset() {
+      Document.getelementbyid("riset").reset();
     }
-</script>
+  </script>
 </html>
