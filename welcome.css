@@ -16,3 +16,19 @@ button:hover{
     0 0 25px rgb(255, 0, 128),0 0 50px rgb(255, 0, 128),
     0 0 100px rgb(255, 0, 128),0 0 200px rgb(255, 0, 128);
 }
+.colored-button{
+    background-color:#3498db;
+    color: white;
+    padding: 1Opx 2opx;
+    border: none;
+    border-radius: 5px;
+}
+h1{
+    color: rgb(18, 68, 68);
+}
+.img-circle{
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+}
